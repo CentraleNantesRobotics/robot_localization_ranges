@@ -1,7 +1,5 @@
 #include <robot_localization_ranges/ros_filter_ranges.h>
 #include <rclcpp/rclcpp.hpp>
-#include <iostream>
-#include <random>
 
 #include <robot_localization/ekf.hpp>
 

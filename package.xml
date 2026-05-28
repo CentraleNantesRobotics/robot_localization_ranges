@@ -15,8 +15,8 @@
   <depend>diagnostic_updater</depend>
   <depend>nav_msgs</depend>
   <depend>tf2_ros</depend>
-  <depend>map_simulator</depend>
   <depend>robot_localization</depend>
+  <depend>angles</depend>
 
   <exec_depend>simple_launch</exec_depend>
   <exec_depend>slider_publisher</exec_depend>

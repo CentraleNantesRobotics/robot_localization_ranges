@@ -1,21 +1,24 @@
 #ifndef ROBOT_LOCALIZATION_RANGES_ROS_FILTER_RANGES_H
 #define ROBOT_LOCALIZATION_RANGES_ROS_FILTER_RANGES_H
 
+#ifdef WITH_MAPSIM_RANGES
 #include <map_simulator/msg/range.hpp>
+#else
+#include <sensor_msgs/msg/range.hpp>
+
+#endif
 
 #include <robot_localization/ros_filter.hpp>
 #include <robot_localization/ekf.hpp>
 
-// #include "robot_localization/ekf.hpp"
-// #include "robot_localization/ukf.hpp"
-
-// #include "robot_localization/filter_base.hpp"
-// #include "robot_localization/filter_common.hpp"
-
-using map_simulator::msg::Range;
-
 namespace robot_localization_ranges
 {
+
+#ifdef WITH_MAPSIM_RANGES
+using map_simulator::msg::Range;
+#else
+using sensor_msgs::msg::Range;
+#endif
 
 struct Anchor
 {
